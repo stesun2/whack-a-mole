@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import './Mole.css';
-import MoleIcon from './Mole.svg';
+import React, { Component } from 'react'
+import './Mole.css'
+import MoleIcon from './Mole.svg'
 
 class Mole extends Component {
   render() {
@@ -12,4 +12,4 @@ class Mole extends Component {
   }
 }
 
-export default Mole;
+export default Mole

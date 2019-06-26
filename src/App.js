@@ -1,41 +1,40 @@
-import React, { Component } from 'react';
-import './App.css';
-import Mole from './components/mole/Mole.js';
+import React, { Component } from 'react'
+import './App.css'
+import Mole from './components/mole/Mole.js'
 
 class App extends Component {
   state = {
-      dens: this._getDensState(),
-      points: 0
-    };
+    dens: this.getDensState(),
+    points: 0,
   }
   componentDidMount() {
-    this._startGame();
+    this.startGame()
   }
-  _startGame() {
+  startGame() {
     setInterval(() => {
       this.setState({
-        dens: this._getDensState()
-      });
+        dens: this.getDensState()
+      })
     }, 1500)
   }
-  _getDensState() {
+  getDensState() {
     return new Array(9).fill({}).map(() => {
       return { 
         isMoleVisible: [true,false][Math.round(Math.random())] 
       }
-    });
+    })
   }
-  _onMoleWhacked() {
+  onMoleWhacked() {
     this.setState({
       points: this.state.points + 1
-    });
+    })
   }
   render() {
     const dens = this.state.dens.map((den, index) => {
       return (
         <Mole key={`mole-${index}`} />
-      );
-    });
+      )
+    })
     return (
       <div className="App">
         <h1>WHACK-A-MOLE!</h1>
@@ -45,8 +44,8 @@ class App extends Component {
           <div style={{clear: 'both'}}></div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
