@@ -3,9 +3,7 @@ import './App.css';
 import Mole from './components/mole/Mole.js';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
+  state = {
       dens: this._getDensState(),
       points: 0
     };
