@@ -21,7 +21,7 @@ Release 0
 Release 1
 -------------
 * Modify `Mole.js` so that points are incremented whenever a visible mole is clicked.
-* Add comments to the `_startGame()`, `_getDensState()`, and `_onMoleWhacked()` methods that explain what the code is doing.
+* Add comments to the `startGame()`, `getDensState()`, and `onMoleWhacked()` functions that explain what the code is doing.
 
 > Squirrel by Pirog tetyana from the Noun Project
 
