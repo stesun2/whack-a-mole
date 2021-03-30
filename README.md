@@ -8,6 +8,8 @@ If you haven't already, read the [React docs](https://facebook.github.io/react/d
 
 In this challenge, we'll be building a [Whack-A-Mole](https://en.wikipedia.org/wiki/Whac-A-Mole) game - this exercise will serve as a gentle introduction to state and props.
 
+Note: Make sure to run `npm install` from the app's root to get the necessary node modules on your local machine.
+
 The game "engine" has already been created.  The state of the top-level component, `App.js`, contains two items:
   1. **dens** - an array of objects that are a representation of the "holes" in the whack-a-mole game.
   2. **points** - an integer that contains the number of times a mole was whacked/clicked.
@@ -23,5 +25,4 @@ Release 1
 * Modify `Mole.js` so that points are incremented whenever a visible mole is clicked.
 * Add comments to the `startGame()`, `getDensState()`, and `onMoleWhacked()` functions that explain what the code is doing.
 
-> Squirrel by Pirog tetyana from the Noun Project
 
